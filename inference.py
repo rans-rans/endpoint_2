@@ -28,7 +28,7 @@ def preprocess_image(image: Image.Image) -> np.ndarray:
 def hello():
     return "done"
 
-@app.post("/predict/")
+@app.post("/predict")
 async def predict(request: ImageRequest):
     try:
         # Decode the base64 string to an image
